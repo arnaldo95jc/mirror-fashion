@@ -1,0 +1,81 @@
+html, body{color: #333; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; height: 100%; font-family: 'PT Sans', sans-serif;}
+#wrapper {min-height: 100%; display: flex; flex-direction: column; align-items: stretch;}
+main {flex-grow: 1;}
+p{text-align: justify; padding: 0 45px; text-indent: 15px;}
+#clearfix::after{content: ""; clear: both; display: table;}
+.sacola{background-image: url(../img/sacola.png); background-repeat: no-repeat; background-position: top right; font-size: 14px; width: 70%; padding-right: 35px; padding-top: 10px; text-align: right; top: 0; float: right;}
+.menu-opcoes{position: absolute; right: 0; bottom: 0; padding-right: 15px; height: 10px; margin-bottom: 10px;}
+.menu-opcoes ul li{font-size: 15px; display: inline-block; margin-left: 20px;}
+.menu-opcoes a{color: #003366;}
+header{position: relative;}
+header img{float: left; width: 29%; height: 80px;}
+.busca, .menu-departamentos	{background-color: #DCDCDC; font-weight: bold; text-transform: uppercase; margin-right: 10px; width: 29%; float: left;}
+.busca h2, .busca form, .menu-departamentos h2 {margin: 10px;}
+.menu-departamentos li {background-color: white; margin-bottom: 1px; padding: 5px 10px; list-style-type: none;}
+.menu-departamentos a {color: #333333; text-decoration:	none;}
+.busca input[type=search] {width: 90%; border-radius: 40px;}
+.menu-departamentos {clear: left; margin-top: 10px; padding-bottom: 10px; height: 424px;}
+.banner-destaque img {width: 70%;}
+.destaque {margin-top: 10px; position: relative;}
+.painel {margin-bottom: 10px; padding: 10px; width: 49%; border-radius: 4px; box-shadow: inset 1px 1px 4px #999;}
+.novidades {float: left; background: linear-gradient(#F5DCDC, #BEBEF4);}
+.mais-vendidos {float: right; background: linear-gradient(#DCDCF5, #F4BEBE);}
+.painel li {display: inline-block; vertical-align: top; width: 140px; margin: 2px; padding-bottom: 10px; transition: 0.7s ease-out;}
+.painel h2 {font-size: 24px;font-weight: bold; text-transform: uppercase; margin-bottom: 10px; text-shadow: 3px 3px 2px	rgba(255,255,255,0.8); font-family: 'Bad Script', sans-serif;}
+.painel a {color: #333; font-size: 14px; text-align: center; text-decoration: none;}
+.novidades {background-color: #F5DCDC;}
+.mais-vendidos {background-color: #DCDCF5;}
+footer {background-image: url(../img/fundo-rodape.png); clear: both; padding: 20px 0;}
+.social a {height: 32px; width: 32px; display: block; text-indent: -9999px;}
+.social a[href*="facebook.com"] {background-image: url(../img/facebook.png);}
+.social a[href*="twitter.com"] {background-image: url(../img/twitter.png);}
+.social a[href*="plus.google.com"] {background-image: url(../img/googleplus.png);}
+footer .container {position: relative;}
+.social	{float: right; padding: 10px 0; list-style-type: none;}
+.social li {float: left; margin-left: 25px;}
+.busca button {background-color: #DCDCDC; background-image: url(../img/busca.png); background-repeat: no-repeat; background-size: 100%; border: none; width: 8%; height: 30px; text-indent: -9999px;}
+.menu-opcoes a:hover {color: #007DC6;}
+.menu-opcoes a:active {color: #867DC6;}
+.menu-departamentos li ul {display: none;}
+.menu-departamentos li:hover ul	{display: block; position: absolute; padding: 0;}
+.menu-departamentos ul {padding-left: 0;}
+.menu-departamentos ul ul li {background-color: #DCDCDC;}
+.menu-departamentos li li a:before {content: '\272A'; padding-right: 3px;}
+.painel h2:before {content: '\2756'; padding-right: 5px; opacity: 0.4;}
+.busca {border-top-left-radius: 4px; border-top-right-radius: 4px;}
+.painel li:hover {background-color: rgba(255,255,255,0.8); transition: 0.7s ease-in; box-shadow: 0 0 5px #333; transform: scale(1.2) rotate(-5deg);}
+.painel li:nth-child(2n):hover {transform: scale(1.2) rotate(5deg);}
+.pause, .play {display: block; position: absolute; right: 20px; bottom: 0;}
+.pause {border-left: 10px solid	#900; border-right: 10px solid #900; height: 30px; width: 5px; padding: 2px;}
+.play {border-left: 25px solid #900; border-bottom: 15px solid transparent; border-top: 15px solid transparent;}
+.painel li:nth-child(n+7) {display:	none;}
+.painel-aberto li:nth-child(n+7) {display: inline-block;}
+.painel button {float: right; margin-right: 10px; padding: 10px; background-color: #333; border: 0; border-radius: 4px; box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5); color: white; font-size: 1em; text-decoration: none; text-shadow: 1px 0 1px black; transition: 0.3s; position: relative; margin-bottom: 10px;}
+.painel button:hover {background-color: #393939; box-shadow: 1px 0 20px	rgba(200, 200, 120, 0.9);}
+.painel button::after {content: ''; display: block; height: 0; width: 0; border-top: 10px solid	#333; border-left: 10px	solid transparent; border-right: 10px solid transparent; position: absolute; top: 100%; left: 50%; margin-left: -5px; transition: 0.3s;}
+.painel button:hover::after	{border-top-color: #393939;}
+
+@media (max-width: 1198px) {
+header {text-align: center;}
+header img {width: 80%; float: none; height: 100%;}
+.sacola {display: none;}
+.menu-opcoes {position: static; text-align:	center; display: inline-block; width: 100%;}
+.menu-opcoes ul li {margin: 5px;}
+.banner-destaque img {padding-top: 10px;}
+.busca, .menu-departamentos, .banner-destaque img {margin-right: 0; width: 100%;}
+.painel	{width: auto;}
+.painel li {width: 40%;}
+.painel img	{width: 100%;}
+}
+
+@media (max-width: 548px) {
+footer {padding: 10px;}
+footer .container {display: flex; justify-content: center;}
+footer .container img {width: 80%; height: 100px;}
+.social {padding-top: 0;}
+.social	li {float: none; margin-bottom: 10px;}
+}
+
+
+
+

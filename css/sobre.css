@@ -1,0 +1,51 @@
+html, body{color: #333; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; height: 100%;}
+#wrapper {min-height: 100%; display: flex; flex-direction: column; align-items: stretch;}
+main {flex-grow: 1;}
+h1{background-image: url(../img/sobre-background.jpg); padding: 10px; margin-top: 10px;}
+h2{border-bottom: 2px solid #333;}
+p{text-align: justify; padding: 0 45px; text-indent: 15px;}
+figure{background-color: #f2eded; border: 1px solid #ccc; text-align: center; padding: 15px; margin: 30px;}
+figcaption{font-style: italic; margin-top: 10px;}
+#centro-distribuicao{width: 60%; float: right; margin: 0 0 10px 10px;}
+#familia-pelho{float: right; margin: 0 0 10px 10px;}
+#clearfix::after{content: ""; clear: both; display: table;}
+.sacola{background-image: url(../img/sacola.png); background-repeat: no-repeat; background-position: top right; font-size: 14px; width: 400px; padding-right: 35px; padding-top: 10px; text-align: right; top: 0; float: right;}
+.menu-opcoes{position: absolute; right: 0; bottom: 0; padding-right: 15px; height: 10px; margin-bottom: 10px;}
+.menu-opcoes ul li{font-size: 15px; display: inline-block; margin-left: 20px;}
+.menu-opcoes a{color: #003366;}
+header{position: relative;}
+header img{float: left; width: 29%; height: 80px;}
+.menu-opcoes a:hover {color: #007DC6;}
+.menu-opcoes a:active {color: #867DC6;}
+footer{background-image: url(../img/fundo-rodape.png); clear: both; padding: 20px 0;}
+.social a {height: 32px; width: 32px; display: block; text-indent: -9999px;}
+.social a[href*="facebook.com"] {background-image: url(../img/facebook.png);}
+.social a[href*="twitter.com"] {background-image: url(../img/twitter.png);}
+.social a[href*="plus.google.com"] {background-image: url(../img/googleplus.png);}
+footer .container {position: relative;}
+.social	{float: right; padding: 10px 0; list-style-type: none;}
+.social li {float: left; margin-left: 25px;}
+p::first-letter{font-weight: bold;}
+h1 + p{text-indent: 0;}
+:not(p) + p::first-line{font-variant: small-caps;}
+
+@media (max-width: 1198px) {
+header {text-align: center;}
+header img {width: 80%; float: none; height: 100%;}
+h1 {text-align: center;}
+p {padding: 0;}
+.sacola {display: none;}
+.menu-opcoes {position: static; text-align:	center; display: inline-block; width: 100%;}
+.menu-opcoes ul li {margin: 5px;}
+figure {padding: 0; margin: 0;}
+#centro-distribuicao, #familia-pelho {float: none; width: 100%; margin-left: 0;}
+#centro-distribuicao img, #familia-pelho img {float: none; width: 100%;}
+}
+
+@media (max-width: 548px) {
+footer {padding: 10px;}
+footer .container {display: flex; justify-content: center;}
+footer .container img {width: 80%; height: 100px;}
+.social {padding-top: 0;}
+.social	li {float: none; margin-bottom: 10px;}
+}
