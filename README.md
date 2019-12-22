@@ -1,1 +1,3 @@
-# mirror-fashion
+## Mirror-fashion.  
+
+### Projeto e-commerce de moda.
